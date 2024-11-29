@@ -10,11 +10,15 @@
 
 ### [Class extends](./OOP/ClassExtends.md)
 
+### [Static properties](./OOP/StaticProperties.md)
+
 ## Frontend architecture patterns
 
 ---
 
 ### [MVC](./MVC/MVC.md)
+
+### [MVVM](./MVVM/MVVM.md)
 
 ## Design patterns
 
