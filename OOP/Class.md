@@ -1,4 +1,3 @@
-[⇐ Function prototype](./FunctionPrototype.md)<br>
 [⇐ readme](../readme.md)
 
 ## Class
@@ -62,7 +61,26 @@ Object.defineProperties(User.prototype, {
 });
 ```
 
-<br>Свойства классов
+<br>`геттеры`/`сеттеры` можно писать через методы.
+<br>Плюсы: могут принимать несколько аргументов и являются безопаснее при рефакторинге.
+<br>Минусы: методы длиннее, чем геттеры/сеттеры.
+<br><span style="color: red;">Это не геттер/сеттер — это метод!</span>
+```js
+class User {
+    getName() {
+        return this.name;
+    }
+    
+    setName(value) {
+        this.name = value;
+    }
+}
+
+const user = new User();
+user.setName('Maks');
+```
+
+<br>Поля / свойства классов
 ```javascript
 class User {
     human = true; // object property
@@ -71,5 +89,3 @@ class User {
 ```
 Свойство `human` не устанавливается в `User.prototype`.<br>
 Оно создаётся оператором `new` перед запуском конструктора.
-
-[next ⇒](./ClassExtends.md)

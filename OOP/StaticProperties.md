@@ -1,4 +1,3 @@
-[⇐ Class extends](./ClassExtends.md)<br>
 [⇐ readme](../readme.md)
 
 ## Static properties
@@ -62,7 +61,7 @@ async function loadUsers() {
 }
 ```
 
-<br>**Классный пример**
+<br><span style="color: green;">**Классный пример**</span>
 ```js
 class Article {
   constructor(title, date) {
@@ -128,5 +127,3 @@ alert(Rabbit.__proto__ === Animal); // true
 // для обычных методов
 alert(Rabbit.prototype.__proto__ === Animal.prototype); // true
 ```
-
-[next ⇒]()

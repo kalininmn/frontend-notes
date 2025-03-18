@@ -34,4 +34,3 @@ function User(name) {
     // return this; (неявно)
 }
 ```
-[Next ⇒](./FunctionPrototype.md)

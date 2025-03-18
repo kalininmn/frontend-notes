@@ -1,4 +1,3 @@
-[⇐ Function constructor](./FunctionConstructor.md)<br>
 [⇐ readme](../readme.md)
 
 ## Function prototype
@@ -26,5 +25,3 @@ function Rabbit() {} // Rabbit.prototype = { constructor: Rabbit }
 
 let rabbit = new Rabbit(); // rabbit.__proto__ == Rabbit.prototype
 ```
-
-[next ⇒](./Class.md)
