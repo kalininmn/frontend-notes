@@ -25,12 +25,6 @@
 
 <b>User</b> ~ UI
 
-## MVC (ВЕБ)
-
----
-
-![](../imgs/img.png)
-
 ## Attention
 
 ---
