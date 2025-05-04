@@ -1,6 +1,9 @@
 # Welcome to Frontend Notes ✨
 
-<span><img src="./assets/icons/icons8-javascript-48.png" style="vertical-align: middle;" height="24"> JavaScript</span>
+<span style="display: flex; align-items: center;">
+<img src="./assets/icons/icons8-javascript-48.png" height="24">
+<span style="margin-left: 2px;">JavaScript</span>
+</span>
 
 - [Object Oriented Programming](./Notes/OOP/main.md)
 
