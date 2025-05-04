@@ -9,6 +9,6 @@
 [Private properties](./OOP/PrivateProperties.md)<br>
 [Built-in class extends](./OOP/BuiltinClassExtends.md)<br>
 
-## 📎 Links
+## Links
 
 🏠 [Home](../../readme.md)
