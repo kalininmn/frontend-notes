@@ -1,34 +1,31 @@
-# Welcome to Frontend Notes ✨
+# ✨ Welcome to Frontend Notes ✨
 
-<span style="display: flex; align-items: center;">
-<img src="./assets/icons/icons8-javascript-48.png" height="24">
-<span style="margin-left: 2px;">JavaScript</span>
-</span>
+#### JavaScript
 
-- [Object Oriented Programming](./Notes/OOP/main.md)
-
-<span><img src="./assets/icons/icons8-typescript-48.png" style="vertical-align: middle;" height="24"> [TypeScript](./Notes/TS/main.md)</span>
-
-
-<span><img src="./assets/icons/icons8-object-48.png" style="vertical-align: middle;" height="24"> Architectures</span>
-
-- [Frontend architecture methodologies](./Notes/FrontendArcitectureMethodologies/main.md)
-
-- [Architecture patterns](./Notes/ArchitecturePatterns/main.md)
-
-- [Design patterns](./Notes/DesignPatterns/main.md)
-
-- [Creational patterns](./Notes/CreationalPatterns/main.md)
-
-- [Development methodologies](./Notes/DevelopmentMethodologies/main.md)
-
-
-<span><img src="./assets/icons/icons8-sync-48.png" style="vertical-align: middle;" height="24"> Continuous integration Continuous delivery</span>
-
-- [CI/CD](./Notes/CICD/main.md)
+[Object Oriented Programming](./Notes/OOP/main.md)<br>
 
 ---
 
-<span style="font-size: 1.5rem">Have a nice day! 🫶</span>
+#### TypeScript
 
-<span style="display: flex; align-items: center; height: 24px;">![]()</span>
+[TypeScript](./Notes/TS/main.md)<br>
+
+---
+
+#### Architectures
+
+[Frontend architecture methodologies](./Notes/FrontendArcitectureMethodologies/main.md)<br>
+[Architecture patterns](./Notes/ArchitecturePatterns/main.md)<br>
+[Design patterns](./Notes/DesignPatterns/main.md)<br>
+[Creational patterns](./Notes/CreationalPatterns/main.md)<br>
+[Development methodologies](./Notes/DevelopmentMethodologies/main.md)<br>
+
+---
+
+#### Continuous integration Continuous delivery
+
+[CI/CD](./Notes/CICD/main.md)
+
+---
+
+### Have a nice day! 🫶
