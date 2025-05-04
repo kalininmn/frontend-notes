@@ -4,13 +4,9 @@
 
 [Object Oriented Programming](./Notes/OOP/main.md)<br>
 
----
-
 #### TypeScript
 
 [TypeScript](./Notes/TS/main.md)<br>
-
----
 
 #### Architectures
 
@@ -19,8 +15,6 @@
 [Design patterns](./Notes/DesignPatterns/main.md)<br>
 [Creational patterns](./Notes/CreationalPatterns/main.md)<br>
 [Development methodologies](./Notes/DevelopmentMethodologies/main.md)<br>
-
----
 
 #### Continuous integration Continuous delivery
 
