@@ -1,10 +1,6 @@
-[⇐ readme](../readme.md)
-
-## Public properties
+# Public properties <sup>ES6, 2015</sup>
 
 Публичные поля, свойства и методы
-
----
 
 **Свойства и методы класса**
 
@@ -41,6 +37,8 @@ animal.happyBirthday(); // Yey!
 console.log(animal.age); // 2
 ```
 
+#
+
 **Поля класса**
 
 ```js
@@ -65,3 +63,7 @@ const supAnimal = new SupAnimal();
 
 console.log(supAnimal.name); // Teddy
 ```
+
+## Links
+
+⬅️ [Back](./main.md)

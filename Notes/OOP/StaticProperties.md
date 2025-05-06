@@ -1,30 +1,34 @@
-[⇐ readme](../readme.md)
+# Static properties <sup>ES6, 2015</sup>
 
-## Static properties
-Статические свойства и методы
-
----
+Статические свойства и методы.
 
 Это свойства и методы, которые присвоены самому классу и могут быть вызваны только через класс.
 
+Это:
 ```js
 class User {
     static staticMethod() {
         alert(this === User);
     }
 }
+```
 
-// Тоже самое что и:
+тоже самое что и:
+```js
 User.staticMethod = function() {
     alert(this === User);
 }
 
 User.staticMethod(); // true
 ```
+
 Значением `this` при вызове `User.staticMethod()` является сам `User`.
 
-<br>Статические методы используются для реализации функций, 
-<br>которые будут принадлежать классу в целом, но не какому-либо его конкретному объекту.
+#
+
+Статические методы используются для реализации функций,<br>
+которые будут принадлежать классу в целом, но не какому-либо его конкретному объекту.
+
 ```js
 class Article {
   constructor(title, date) {
@@ -38,7 +42,7 @@ class Article {
 }
 
 // использование
-let articles = [
+const articles = [
   new Article("HTML", new Date(2019, 1, 1)),
   new Article("CSS", new Date(2019, 0, 1)),
   new Article("JavaScript", new Date(2019, 11, 1))
@@ -46,7 +50,9 @@ let articles = [
 
 articles.sort(Article.compare);
 ```
+
 или
+
 ```js
 class UserService {
     static async getUsers() {
@@ -61,7 +67,9 @@ async function loadUsers() {
 }
 ```
 
-<br><span style="color: green;">**Классный пример**</span>
+#
+
+**Классный пример**
 ```js
 class Article {
   constructor(title, date) {
@@ -80,7 +88,10 @@ let article = Article.createTodays();
 alert(article.title); // Сегодняшний дайджест
 ```
 
-<br>**Статические свойства**
+#
+
+Статические свойства
+
 ```js
 class Article {
   static publisher = "KalininMN";
@@ -90,7 +101,10 @@ class Article {
 Article.publisher = "KalininMN";
 ```
 
-## Статические свойства и методы -- наследуются
+#
+
+Статические свойства и методы ⎯ наследуются.
+
 ```js
 class Animal {
     static compare(animalA, animalB) {
@@ -107,23 +121,29 @@ const rabbits = [
 
 rabbits.sort(Rabbit.compare);
 ```
-`extends` даёт `Rabbit` ссылку `[[Prototype]]`на `Animal`.
+
+`extends` даёт `Rabbit` ссылку `[[Prototype]]` на `Animal`.
+
 ```js
 Rabbit.__proto__ == Animal; // true
 ```
+
 `extends` даёт `Rabbit.prototype` ссылку `[[Prototype]]` на `Animal.prototype`.
+
 ```js
 Rabbit.prototype.__proto__ == Animal.prototype; // true
 ```
 
-<br>В результате:
-```js
-class Animal {}
-class Rabbit extends Animal {}
+В результате:
 
+```js
 // для статики
-alert(Rabbit.__proto__ === Animal); // true
+Rabbit.__proto__ === Animal // true
 
 // для обычных методов
-alert(Rabbit.prototype.__proto__ === Animal.prototype); // true
+Rabbit.prototype.__proto__ === Animal.prototype // true
 ```
+
+## Links
+
+⬅️ [Back](./main.md)

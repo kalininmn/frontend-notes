@@ -1,12 +1,8 @@
-[⇐ readme](../readme.md)
+# Function prototype <sup>ES5, 2009</sup>
 
-## Function prototype
-Свойство функции `prototype`, ecmascript 5 (2009).
+Свойство функции `prototype`.
 
----
-
-Если `F.prototype` содержит объект, оператор `new` устанавливает его
-в `[[Prototype]]` для нового объекта:
+Если `F.prototype` содержит объект, оператор `new` устанавливает его в&nbsp;`[[Prototype]]` для нового объекта:
 
 ```javascript
 let animal = {};
@@ -18,10 +14,15 @@ Rabbit.prototype = animal;
 let rabbit = new Rabbit(); // rabbit.__proto__ == animal
 ```
 
-<br>По умолчанию каждая не стрелочная функция содержит свойство `prototype` — объект
-с единственным свойством `constructor`, которое ссылается на функцию-конструктор:
+#
+
+По умолчанию каждая не&nbsp;стрелочная функция содержит свойство `prototype` — объект с&nbsp;единственным свойством `constructor`, которое ссылается на функцию-конструктор:
 ```javascript
 function Rabbit() {} // Rabbit.prototype = { constructor: Rabbit }
 
 let rabbit = new Rabbit(); // rabbit.__proto__ == Rabbit.prototype
 ```
+
+## Links
+
+⬅️ [Back](./main.md)

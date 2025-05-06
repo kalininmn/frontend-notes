@@ -1,16 +1,17 @@
-[⇐ readme](../readme.md)
+# Function constructor <sup>ES5, 2009</sup>
 
-## Function constructor
-Функция конструктор, ecmascript 5 (2009).
+Функция конструктор.
 
----
 ```javascript
 function F() {}
 ```
-1. Именуется с большой буквы
-2. Вызывается с оператором `new`
 
-<br>`new` — вызов функции в режиме конструктора.
+Именуется с большой буквы.<br>
+Вызывается с оператором `new`.
+
+#
+
+`new` — вызов функции в режиме конструктора.
 
 ```javascript
 function User(name) {
@@ -21,7 +22,9 @@ function User(name) {
 let user = new User('John');
 ```
 
-<br>Функция конструктор делает следующее:
+#
+
+Функция конструктор делает следующее:
 1. Создаёт пустой объект `{}`;
 2. Записывает его неявно в `this`;
 3. Возвращает `this`.
@@ -34,3 +37,7 @@ function User(name) {
     // return this; (неявно)
 }
 ```
+
+## Links
+
+⬅️ [Back](./main.md)

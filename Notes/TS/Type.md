@@ -1,6 +1,4 @@
-[⇐ readme](../readme.md)
-
-## Type
+# Type
 Тип
 
 Use type when you need specific features.

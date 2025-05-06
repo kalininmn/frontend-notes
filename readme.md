@@ -6,7 +6,10 @@
 
 #### TypeScript
 
-[TypeScript](./Notes/TS/main.md)<br>
+[Types](./Notes/TS/Types.md)<br>
+[Type](./Notes/TS/Type.md)<br>
+[Interface](./Notes/TS/Interface.md)<br>
+
 
 #### Architectures
 

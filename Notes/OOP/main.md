@@ -1,14 +1,14 @@
 # OOP
 
-[Function constructor](./OOP/FunctionConstructor.md)<br>
-[Function prototype](./OOP/FunctionPrototype.md)<br>
-[Class](./OOP/Class.md)<br>
-[Class extends](./OOP/ClassExtends.md)<br>
-[Static properties](./OOP/StaticProperties.md)<br>
-[Public properties](./OOP/PublicProperties.md)<br>
-[Private properties](./OOP/PrivateProperties.md)<br>
-[Built-in class extends](./OOP/BuiltinClassExtends.md)<br>
+[Function constructor](./FunctionConstructor.md)<br>
+[Function prototype](./FunctionPrototype.md)<br>
+[Class](./Class.md)<br>
+[Class extends](./ClassExtends.md)<br>
+[Static properties](./StaticProperties.md)<br>
+[Public properties](./PublicProperties.md)<br>
+[Private properties](./PrivateProperties.md)<br>
+[Built-in class extends](./BuiltinClassExtends.md)<br>
 
 ## Links
 
-🏠 [Home](../../readme.md)
+🏠 [Home](/readme.md)

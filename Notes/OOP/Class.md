@@ -1,12 +1,8 @@
-[⇐ readme](../readme.md)
+# Class <sup>ES6, 2015</sup>
 
-## Class
-Классы, ecmascript 6 (2015).
-<br>Всегда `use strict`.
+Всегда `use strict`.
 
----
-
-`constructor` класса является функцией-конструктором:
+`constructor` класса является [функцией-конструктором](./FunctionConstructor.md):
 ```javascript
 class User {
     constructor(name) {
@@ -15,7 +11,9 @@ class User {
 }
 ```
 
-<br>Методы класса сохраняются в его `prototype`:
+#
+
+Методы класса сохраняются в его `prototype`:
 ```javascript
 class User {
     // counstructor() {} (неявно)
@@ -24,10 +22,12 @@ class User {
     }
 }
 
-// User.prototype == { consctuctor: User, sayHi(), }
+// User.prototype == { consctuctor: User, sayHi }
 ```
 
-<br>`Геттеры`/`Сеттеры` класса сохраняются в его `prototype`:
+#
+
+`Геттеры` и `Сеттеры` класса сохраняются в его `prototype`:
 ```javascript
 class User {
     constructor(name) {
@@ -47,7 +47,11 @@ class User {
     }
 }
 ```
-При объявлении класса `геттеры`/`сеттеры` создаются на `User.prototype`:
+
+#
+
+При объявлении класса `геттеры` и&nbsp;`сеттеры` создаются на `User.prototype`:
+
 ```javascript
 Object.defineProperties(User.prototype, {
     name: {
@@ -61,11 +65,19 @@ Object.defineProperties(User.prototype, {
 });
 ```
 
-<br>`геттеры`/`сеттеры` можно писать через методы.
-<br>Плюсы: могут принимать несколько аргументов и являются безопаснее при рефакторинге.
-<br>Минусы: методы длиннее, чем геттеры/сеттеры.
-<br><span style="color: red;">Это не геттер/сеттер — это метод!</span>
+#
+
+`геттеры` и&nbsp;`сеттеры` можно писать через методы.
+
+Плюсы: 
+- могут принимать несколько аргументов;
+- являются безопаснее при рефакторинге.
+
+Минусы: 
+- методы длиннее, чем геттеры/сеттеры.
+
 ```js
+// Это не геттер и сеттер — это метод!
 class User {
     getName() {
         return this.name;
@@ -80,12 +92,20 @@ const user = new User();
 user.setName('Maks');
 ```
 
-<br>Поля / свойства классов
+#
+
+Поля или свойства классов.
+
 ```javascript
 class User {
     human = true; // object property
     
 }
 ```
+
 Свойство `human` не устанавливается в `User.prototype`.<br>
 Оно создаётся оператором `new` перед запуском конструктора.
+
+## Links
+
+⬅️ [Back](./main.md)

@@ -1,11 +1,7 @@
-[⇐ readme](../readme.md)
+# Built-in Class Extends <sup>ES6, 2015</sup>
 
-## Built-in class extends
-
-Наследование классов, ecmascript 6 (2015).
-<br>ООП: наследование — расширение встроенных классов.
-
----
+Наследование классов.<br>
+ООП: наследование — расширение встроенных классов.
 
 ```js
 class PowerArray extends Array {
@@ -22,9 +18,11 @@ console.log(filteredArr); // 10, 50
 console.log(filteredArr.isEmpty()); // false
 ```
 
-<br>Статический геттер `Symbol.species` возвращает конструктор, 
-<br>который JS будет использовать в `.filter`, `.map` и других методах 
-<br>для создания новых объектов.
+#
+
+Статический геттер `Symbol.species` возвращает конструктор,<br>
+который JS будет использовать в `.filter`, `.map` и других методах<br>
+для создания новых объектов.
 
 ```js
 class PowerArray extends Array {
@@ -42,15 +40,18 @@ const arr = new PowerArray(1, 2, 5, 10, 50);
 console.log(arr.isEmpty()); // false
 
 // filter создаст новый массив, используя arr.constructor[Symbol.species] как конструктор
-const filteredArr = arr.filter(item => item >= 10);
+const filteredArr = arr.filter((item) => item >= 10);
 
 // filteredArr не является PowerArray, это Array
 console.log(filteredArr.isEmpty()); // Error: filteredArr.isEmpty is not a function
 ```
+
 Аналогично работают другие коллекции: `Map`, `Set`, ...
 
-<span style="color: red;">**Важно**</span>
-<br>Встроенные классы не наследуют методы друг-друга.
+#
+
+**Важно**<br>
+Встроенные классы не наследуют методы друг-друга.
 
 ```js
 // Object
@@ -62,3 +63,7 @@ Object.prototype -> { constructor: Object, ... }
 Array.__proto__ -> [native code]
 Array.prototype -> { constructor: Array, ... }
 ```
+
+## Links
+
+🏠 [Home](/readme.md)
