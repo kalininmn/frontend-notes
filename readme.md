@@ -1,5 +1,10 @@
 # ✨ Welcome to Frontend Notes ✨
 
+#### CSS
+[Sizes](./Notes/CSS/Sizes/main.md)\
+[Positioning](./Notes/CSS/Positioning/main.md)
+
+
 #### JavaScript
 
 [Object Oriented Programming](./Notes/OOP/main.md)<br>
